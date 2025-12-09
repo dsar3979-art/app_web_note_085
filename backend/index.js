@@ -2,6 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
 const app = express(); // la constante app tendrá ahora todo el funcionamiento del servidor
+const { mongoose } = require('./database'); // no se quiere todo el archivo sino la conexión
 
 /** * Se crea una REST API, es la manera de decirle al servidor que reciba y envíe datos  */
 // Configuraciones
